@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling1\cocoaplatform1{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red155\green35\blue147;\red11\green79\blue121;\red0\green0\blue0;
+\red15\green104\blue160;\red50\green109\blue116;\red108\green54\blue169;\red28\green70\blue74;\red57\green0\blue160;
+\red28\green0\blue207;\red93\green108\blue121;\red196\green26\blue22;}
+{\*\expandedcolortbl;;\cssrgb\c60784\c13725\c57647;\cssrgb\c4314\c30980\c47451;\cssrgb\c0\c0\c0;
+\cssrgb\c5882\c40784\c62745;\cssrgb\c19608\c42745\c45490;\cssrgb\c42353\c21176\c66275;\cssrgb\c10980\c27451\c29020;\cssrgb\c22353\c0\c62745;
+\cssrgb\c10980\c0\c81176;\cssrgb\c36471\c42353\c47451;\cssrgb\c76863\c10196\c8627;}
+\deftab720
+\pard\pardeftab720\li200\fi-200\partightenfactor0
+
+\f0\b\fs86\fsmilli43333 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 struct
+\f1\b0 \cf3 \strokec3  Queue\cf0 \strokec4 <Element> \{\uc0\u8232 
+\f0\b \cf2 \strokec2 \'a0\'a0\'a0\'a0var
+\f1\b0 \cf5 \strokec5  items\cf0 \strokec4  = [Element]()\uc0\u8232 
+\f0\b \cf2 \strokec2 \'a0\'a0\'a0\'a0mutating func
+\f1\b0 \cf5 \strokec5  add\cf0 \strokec4 (\cf5 \strokec5 _\cf0 \strokec4  item: Element) \{\uc0\u8232 \cf6 \strokec6 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0items\cf0 \strokec4 .\cf7 \strokec7 append\cf0 \strokec4 (item)\uc0\u8232 \'a0\'a0\'a0\'a0\}\u8232 
+\f0\b \cf2 \strokec2 \'a0\'a0\'a0\'a0mutating func
+\f1\b0 \cf5 \strokec5  poll\cf0 \strokec4 () -> Element \{\uc0\u8232 
+\f0\b \cf2 \strokec2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0return
+\f1\b0 \cf6 \strokec6  items\cf0 \strokec4 .\cf7 \strokec7 removeFirst\cf0 \strokec4 ()\uc0\u8232 \'a0\'a0\'a0\'a0\}\u8232 
+\f0\b \cf2 \strokec2 \'a0\'a0\'a0\'a0func
+\f1\b0 \cf5 \strokec5  peek\cf0 \strokec4 () -> Element? \{\uc0\u8232 
+\f0\b \cf2 \strokec2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0return
+\f1\b0 \cf6 \strokec6  items\cf0 \strokec4 .\cf7 \strokec7 first\cf0 \strokec4 \uc0\u8232 \'a0\'a0\'a0\'a0\}\u8232 \}\u8232 \u8232 
+\f0\b \cf2 \strokec2 var
+\f1\b0 \cf0 \strokec4  intQueue = \cf8 \strokec8 Queue\cf0 \strokec4 <\cf9 \strokec9 Int\cf0 \strokec4 >()\uc0\u8232 intQueue.\cf6 \strokec6 add\cf0 \strokec4 (\cf10 \strokec10 1\cf0 \strokec4 )\uc0\u8232 intQueue.\cf6 \strokec6 add\cf0 \strokec4 (\cf10 \strokec10 3\cf0 \strokec4 )\uc0\u8232 intQueue.\cf6 \strokec6 add\cf0 \strokec4 (\cf10 \strokec10 5\cf0 \strokec4 )\uc0\u8232 \u8232 
+\f0\b \cf2 \strokec2 let
+\f1\b0 \cf0 \strokec4  top = intQueue.\cf6 \strokec6 peek\cf0 \strokec4 ()!\uc0\u8232 \cf11 \strokec11 //top is 1\cf0 \strokec4 \uc0\u8232 
+\f0\b \cf2 \strokec2 let
+\f1\b0 \cf0 \strokec4  first = intQueue.\cf6 \strokec6 poll\cf0 \strokec4 ()\uc0\u8232 \cf11 \strokec11 //first is 1\cf0 \strokec4 \uc0\u8232 
+\f0\b \cf2 \strokec2 let
+\f1\b0 \cf0 \strokec4  second = intQueue.\cf6 \strokec6 poll\cf0 \strokec4 ()\uc0\u8232 \cf11 \strokec11 //second is 3\cf0 \strokec4 \uc0\u8232 
+\f0\b \cf2 \strokec2 let
+\f1\b0 \cf0 \strokec4  third = intQueue.\cf6 \strokec6 poll\cf0 \strokec4 ()\uc0\u8232 \cf11 \strokec11 //third is 5\cf0 \strokec4 \uc0\u8232 \u8232 \cf7 \strokec7 print\cf0 \strokec4 (\cf12 \strokec12 "top is \cf0 \strokec4 \\(top)\cf12 \strokec12 "\cf0 \strokec4 )\uc0\u8232 \cf7 \strokec7 print\cf0 \strokec4 (\cf12 \strokec12 "first is \cf0 \strokec4 \\(first)\cf12 \strokec12 "\cf0 \strokec4 )\uc0\u8232 \cf7 \strokec7 print\cf0 \strokec4 (\cf12 \strokec12 "second is \cf0 \strokec4 \\(second)\cf12 \strokec12 "\cf0 \strokec4 )\uc0\u8232 \cf7 \strokec7 print\cf0 \strokec4 (\cf12 \strokec12 "third is \cf0 \strokec4 \\(third)\cf12 \strokec12 "\cf0 \strokec4 )}
