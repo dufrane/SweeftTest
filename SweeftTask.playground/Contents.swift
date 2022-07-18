@@ -75,8 +75,8 @@ notContains(array: arr)
 //
 
 
-func checkParentheses(s: String) -> Bool {
-    let formattedString = s.replacingOccurrences(of: " ", with: "")
+func isProperly(sequence: String) -> Bool {
+    let formattedString = sequence.replacingOccurrences(of: " ", with: "")
     
     let pairs: [Character: Character] = ["(" : ")"]
     var stack: [Character] = []
@@ -94,7 +94,7 @@ func checkParentheses(s: String) -> Bool {
 
 let str = "((() ()) (()()))"
 let str2 = "((() ()) (()())))"
-checkParentheses(s: str)
+isProperly(sequence: str)
 
 //5. We have n floor stairs, in one action we can climb 1 or 2 steps. Write a function that counts the number of options for climbing n floors.
 //
